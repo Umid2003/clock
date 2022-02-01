@@ -1,0 +1,73 @@
+body {
+    background: url('../image/bg.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.fa-clock {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    animation: anim linear forwards;
+}
+
+@keyframes anim {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+.clock-container {
+    background: url('../image/clock.png') no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 100vh;
+    margin: 5% auto;
+    position: relative;
+}
+
+.circle,
+.hour,
+.minute,
+.second {
+    position: absolute;
+    transform-origin: bottom;
+    border-radius: 10px;
+}
+
+.circle {
+    background-color: #414141;
+    width: 5%;
+    height: 4%;
+    top: 39%;
+    left: 47%;
+    border-radius: 50%;
+}
+
+.hour {
+    background-color: #000;
+    width: 2.4%;
+    height: 25%;
+    top: 16%;
+    left: 48.5%;
+    opacity: 0.7;
+}
+
+.minute {
+    width: 1.6%;
+    height: 29%;
+    top: 12%;
+    left: 48.8%;
+    background-color: #21bb6e;
+    opacity: 1;
+}
+
+.second {
+    width: 1.2%;
+    height: 31%;
+    top: 10%;
+    left: 49%;
+    background-color: #bb5921;
+    opacity: 0.7;
+}
